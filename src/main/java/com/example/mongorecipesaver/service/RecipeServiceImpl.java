@@ -29,8 +29,7 @@ public class RecipeServiceImpl implements RecipeService{
 
     @Override
     public Recipe getRecipe(String recipeId) {
-        Recipe recipe = getOrThrow(recipeId);
-        return recipe;
+        return getOrThrow(recipeId);
     }
 
     private Recipe getOrThrow(String recipeId) {
